@@ -9,7 +9,7 @@ int compare_list(listint_t *head, listint_t *middle, int len);
  *
  * @head: pointer to pointer of the first node in the list passed
  *
- * Return: 0 if the palidrome isn't detected and 1 if yes
+ * Return: 0 if the palidrome isnt detected and 1 if yes
  */
 int is_palindrome(listint_t **head)
 {
@@ -35,7 +35,7 @@ int is_palindrome(listint_t **head)
 		len = len - 1;
 	}
 	reverse(&middle);
-	i = compare_list(*head, middle, len);
+	i = compare_lists(*head, middle, len);
 
 	return (i);
 }
@@ -43,11 +43,11 @@ int is_palindrome(listint_t **head)
 /**
  * compare_lists - compare two lists
  * @head: pointer to the head node
- * @middle: pointer to thr middle node
+ * @middle: pointer to the middle node
  * @len: length of the list
  * Return: if the same 1, if not 0
  */
-int compare_list(listint_t *head, listint_t *middle, int len)
+int compare_lists(listint_t *head, listint_t *middle, int len)
 {
 	int i;
 
