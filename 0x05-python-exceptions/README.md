@@ -1,0 +1,1 @@
+Syntax errors, also known as parsing errors, are perhaps the most common kind of complaint you get while you are still learning Python. The parser repeats the offending line and displays little ‘arrow’s pointing at the token in the line where the error was detected. The error may be caused by the absence of a token before the indicated token.
