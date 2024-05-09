@@ -593,7 +593,7 @@ guillaume@ubuntu:~/0x06$
 ## 10. ByteCode -> Python #5
  
 Write the Python class `MagicClass` that does exactly the same as the following Python bytecode:
-
+```
 Disassembly of __init__:
  10           0 LOAD_CONST               1 (0)
               3 LOAD_FAST                0 (self)
@@ -643,7 +643,7 @@ Disassembly of circumference:
              13 LOAD_ATTR                2 (_MagicClass__radius)
              16 BINARY_MULTIPLY
              17 RETURN_VALUE
-             
+ ```            
 ### Tip: [Python bytecode](https://intranet.alxswe.com/rltoken/l0hEn4L06ZhFg5HzGPbEhQ)
 ---
 
