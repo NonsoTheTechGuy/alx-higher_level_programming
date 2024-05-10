@@ -441,7 +441,7 @@ Write the Python function `def magic_calculation(a, b)`: that does exactly the s
             110 RETURN_VALUE
 ```
 
-Tip: [Python bytecode](https://intranet.alxswe.com/rltoken/FMdg7W8NKJZKRuFGG8mzmg)
+Tip: __[Python bytecode](https://intranet.alxswe.com/rltoken/FMdg7W8NKJZKRuFGG8mzmg)__
 ---
 ## Repo:
 
