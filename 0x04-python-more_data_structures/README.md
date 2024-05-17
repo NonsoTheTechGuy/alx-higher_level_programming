@@ -18,7 +18,7 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 - What are sets and how to use them
 - What are the most common methods of set and how to use them
 - When to use sets versus lists
-- - How to iterate into a set
+- How to iterate into a set
 - What are dictionaries and how to use them
 - When to use dictionaries versus lists or sets
 - What is a key in a dictionary
