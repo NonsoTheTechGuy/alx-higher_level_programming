@@ -1,4 +1,4 @@
-# 0x05. Python - Exceptions 💂‍♂️
+# Project - 0x05. Python - Exceptions 💂‍♂️
 # `Python`
 ## Resources
 Read or watch:
