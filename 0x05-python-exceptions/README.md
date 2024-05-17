@@ -274,7 +274,7 @@ guillaume@ubuntu:~/0x05$
 
 Write a function that raises a type exception.
 
-- Prototype: `ef raise_exception()`:
+- Prototype: `def raise_exception()`:
 - You are not allowed to import any module
 ```
 guillaume@ubuntu:~/0x05$ cat 5-main.py
@@ -383,7 +383,7 @@ guillaume@ubuntu:~/0x05$
  
 Write a function that executes a function safely.
 
-- Prototype: `ef safe_function(fct, *args)`:
+- Prototype: `def safe_function(fct, *args)`:
 - You can assume `fct` will be always a pointer to a function
 - Returns the result of the function,
 - Otherwise, returns `None` if something happens during the function and prints in `stderr` the error precede by `Exception`:
