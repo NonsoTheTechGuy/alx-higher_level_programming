@@ -8,7 +8,6 @@ For this project, we expect you to look at this concept:
 
 ![image](https://github.com/NonsoTheTechGuy/alx-higher_level_programming/assets/92136146/5b8bdce3-9d4a-4b90-a4ca-316f227a8d75)
 
-
 ## Author’s disclaimer
 ```
 Welcome to the Python world!
