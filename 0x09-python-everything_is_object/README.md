@@ -574,7 +574,7 @@ Will the last line of this script print `139926795932424`? Answer with `Yes` or 
 ## 29. #pythonic
 `advanced`
  
-Write a function `agic_string()` that returns a string “BestSchool” n times the number of the iteration (see code):
+Write a function `magic_string()` that returns a string “BestSchool” n times the number of the iteration (see code):
 
 - Format: see example
 - Your file should be maximum 4-line long (no documentation needed)
