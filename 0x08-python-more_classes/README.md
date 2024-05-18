@@ -560,7 +560,7 @@ Write a class `Rectangle that defines a rectangle by: (based on `7-rectangle.py`
    - Initialized to `#`
    - Used as symbol for string representation
    - Can be any type
-- Instantiation with optional width and height: `def __init__(self, width=0, height=0)`:
+- Instantiation with optional `width` and `height`: `def __init__(self, width=0, height=0)`:
 - Public instance method: `def area(self)`: that returns the rectangle area
 - Public instance method: `def perimeter(self)`: that returns the rectangle perimeter:
      - if `width` or `height` is equal to `0`, perimeter has to be equal to `0`
@@ -716,4 +716,4 @@ julien@ubuntu:~/0x08. N Queens$
     
 # Author
 
-## KALU JONAJH CHINONSO 💂‍♂️
+## KALU JONAH CHINONSO 💂‍♂️
