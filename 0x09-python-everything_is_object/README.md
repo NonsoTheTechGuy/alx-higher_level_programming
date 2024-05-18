@@ -465,7 +465,7 @@ Is `a` a tuple? Answer with `Yes` or `No`.
 ```
 a = (1)
 ```
-Is `a` a tuple? Answer with `Yes` or `No.
+Is `a` a tuple? Answer with `Yes` or `No`.
 
 ## Repo:
 
