@@ -1,4 +1,4 @@
-# 0x09. Python - Everything is object
+# Project - 0x09. Python - Everything is object
 ## `Python` `OOP`
 
 ![image](https://github.com/NonsoTheTechGuy/alx-higher_level_programming/assets/92136146/34fdbb10-8454-4160-a1ad-6a5d9a36f45d)
