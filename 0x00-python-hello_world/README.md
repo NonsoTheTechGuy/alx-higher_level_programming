@@ -8,6 +8,20 @@ For this project, we expect you to look at this concept:
 
 ![image](https://github.com/NonsoTheTechGuy/alx-higher_level_programming/assets/92136146/5b8bdce3-9d4a-4b90-a4ca-316f227a8d75)
 
+
+## CONCEPTS OF PYTHON PROGRAMMING
+![image](https://github.com/NonsoTheTechGuy/alx-higher_level_programming/assets/92136146/4772928b-a6b7-44f3-bf20-1526a6f45f90)
+
+- [The Python Tutorial](https://intranet.alxswe.com/rltoken/Fl7kjKxXgkbmX5P0-4k4tQ)
+- [Python Programming: An Introduction to Computer Science 3rd edition](https://intranet.alxswe.com/rltoken/NHlaFZoFcYtZHVMj1ncXmw)
+- [Derek Banas’ Learn to program](https://intranet.alxswe.com/rltoken/RNQj-DQDjG_lOzQn_ku2eg)
+- [The Python Guru](https://intranet.alxswe.com/rltoken/5U-qFDOGHyBSCLg2A37ILA)
+- [New string formatting](https://intranet.alxswe.com/rltoken/SUwBgkKMH7wiedG57WcT9A)
+- [Garbage collector](https://intranet.alxswe.com/rltoken/CimKF3MlfErabvZWtFxHjg)
+- [Python Interpreter](https://intranet.alxswe.com/rltoken/a5z3uSkiby1Xw679cFiw1Q)
+- [Python bytecode](https://intranet.alxswe.com/rltoken/oJ2v8bVCLZmAowJ7WXLzJg)
+
+
 ## Author’s disclaimer
 ```
 Welcome to the Python world!
