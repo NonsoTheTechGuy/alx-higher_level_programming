@@ -13,7 +13,7 @@ In this project, you will review everything about Python:
 - Getter/Setter
 - Class method
 - Static method
-- - Inheritance
+- Inheritance
 - Unittest
 - Read/Write file
 
@@ -154,25 +154,25 @@ guillaume@ubuntu:~/$
 - Directory: `0x0C-python-almost_a_circle`
 - File: `models/base.py, models/__init__.py`
     
-2. First Rectangle
-mandatory
-Score: 0.0% (Checks completed: 0.0%)
-Write the class Rectangle that inherits from Base:
+## 2. First Rectangle
+`mandatory`
+ 
+Write the class `Rectangle` that inherits from `Base`:
 
-In the file models/rectangle.py
-Class Rectangle inherits from Base
-Private instance attributes, each with its own public getter and setter:
-__width -> width
-__height -> height
-__x -> x
-__y -> y
-Class constructor: def __init__(self, width, height, x=0, y=0, id=None):
-Call the super class with id - this super call with use the logic of the __init__ of the Base class
-Assign each argument width, height, x and y to the right attribute
+- In the file `models/rectangle.py`
+- Class `Rectangle` inherits from `Base`
+- Private instance attributes, each with its own public getter and setter:
+    - `__width` -> `width`
+    - `__height` -> `height`
+    - `__x` -> `x`
+    - `__y` -> `y`
+- Class constructor: `def __init__(self, width, height, x=0, y=0, id=None)`:
+    - Call the super class with `id` - this super call with use the logic of the `__init__` of the `Base` class
+    - Assign each argument `width`, `height`, `x` and `y` to the right attribute
 Why private attributes with getter/setter? Why not directly public attribute?
 
 Because we want to protect attributes of our class. With a setter, you are able to validate what a developer is trying to assign to a variable. So after, in your class you can “trust” these attributes.
-
+```
 guillaume@ubuntu:~/$ cat 1-main.py
 #!/usr/bin/python3
 """ 1-main """
@@ -193,21 +193,24 @@ guillaume@ubuntu:~/$ ./1-main.py
 1
 2
 12
-guillaume@ubuntu:~/$ 
-Repo:
+guillaume@ubuntu:~/$
+```
+---
+## Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x0C-python-almost_a_circle
-File: models/rectangle.py
+- GitHub repository: `alx-higher_level_programming`
+- Directory: `0x0C-python-almost_a_circle`
+- File: `models/rectangle.py`
    
-3. Validate attributes
-mandatory
-Score: 0.0% (Checks completed: 0.0%)
-Update the class Rectangle by adding validation of all setter methods and instantiation (id excluded):
+## 3. Validate attributes
+`mandatory`
+ 
+Update the class `Rectangle` by adding validation of all setter methods and instantiation (`id` excluded):
 
-If the input is not an integer, raise the TypeError exception with the message: <name of the attribute> must be an integer. Example: width must be an integer
-If width or height is under or equals 0, raise the ValueError exception with the message: <name of the attribute> must be > 0. Example: width must be > 0
-If x or y is under 0, raise the ValueError exception with the message: <name of the attribute> must be >= 0. Example: x must be >= 0
+- If the input is not an integer, raise the `TypeError` exception with the message: `<name of the attribute> must be an integer`. Example: `width must be an integer`
+- If `width` or `height` is under or equals 0, raise the `ValueError` exception with the message: `<name of the attribute> must be > 0`. Example: `width must be > 0`
+- If `x` or `y` is under 0, raise the `ValueError` exception with the message: `<name of the attribute> must be >= 0`. Example: `x must be >= 0`
+```
 guillaume@ubuntu:~/$ cat 2-main.py
 #!/usr/bin/python3
 """ 2-main """
@@ -242,18 +245,20 @@ guillaume@ubuntu:~/$ ./2-main.py
 [ValueError] width must be > 0
 [TypeError] x must be an integer
 [ValueError] y must be >= 0
-guillaume@ubuntu:~/$ 
-Repo:
+guillaume@ubuntu:~/$
+```
+---
+## Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x0C-python-almost_a_circle
-File: models/rectangle.py
+- GitHub repository: `alx-higher_level_programming`
+- Directory: `0x0C-python-almost_a_circle`
+- File: `models/rectangle.py`
    
-4. Area first
-mandatory
-Score: 0.0% (Checks completed: 0.0%)
-Update the class Rectangle by adding the public method def area(self): that returns the area value of the Rectangle instance.
-
+## 4. Area first
+`mandatory`
+ 
+Update the class `Rectangle` by adding the public method `def area(self)`: that returns the area value of the `Rectangle` instance.
+```
 guillaume@ubuntu:~/$ cat 3-main.py
 #!/usr/bin/python3
 """ 3-main """
@@ -274,18 +279,20 @@ guillaume@ubuntu:~/$ ./3-main.py
 6
 20
 56
-guillaume@ubuntu:~/$ 
-Repo:
+guillaume@ubuntu:~/$
+```
+---
+## Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x0C-python-almost_a_circle
-File: models/rectangle.py
+- GitHub repository: `alx-higher_level_programming`
+- Directory: `0x0C-python-almost_a_circle`
+- File: `models/rectangle.py`
    
-5. Display #0
-mandatory
-Score: 0.0% (Checks completed: 0.0%)
-Update the class Rectangle by adding the public method def display(self): that prints in stdout the Rectangle instance with the character # - you don’t need to handle x and y here.
-
+## 5. Display #0
+`mandatory`
+ 
+Update the class `Rectangle` by adding the public method `def display(self)`: that prints in stdout the `Rectangle` instance with the character `#` - you don’t need to handle `x` and `y` here.
+```
 guillaume@ubuntu:~/$ cat 4-main.py
 #!/usr/bin/python3
 """ 4-main """
@@ -311,18 +318,20 @@ guillaume@ubuntu:~/$ ./4-main.py
 ---
 ##
 ##
-guillaume@ubuntu:~/$ 
-Repo:
+guillaume@ubuntu:~/$
+```
+---
+## Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x0C-python-almost_a_circle
-File: models/rectangle.py
+- GitHub repository: `alx-higher_level_programming`
+- Directory: `0x0C-python-almost_a_circle`
+- File: `models/rectangle.py`
    
-6. __str__
-mandatory
-Score: 0.0% (Checks completed: 0.0%)
-Update the class Rectangle by overriding the __str__ method so that it returns [Rectangle] (<id>) <x>/<y> - <width>/<height>
-
+## 6. __str__
+`mandatory`
+ 
+Update the class `Rectangle` by overriding the `__str__` method so that it returns `[Rectangle] (<id>) <x>/<y> - <width>/<height>`
+```
 guillaume@ubuntu:~/$ cat 5-main.py
 #!/usr/bin/python3
 """ 5-main """
@@ -339,18 +348,20 @@ if __name__ == "__main__":
 guillaume@ubuntu:~/$ ./5-main.py
 [Rectangle] (12) 2/1 - 4/6
 [Rectangle] (1) 1/0 - 5/5
-guillaume@ubuntu:~/$ 
-Repo:
+guillaume@ubuntu:~/$
+```
+---
+## Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x0C-python-almost_a_circle
-File: models/rectangle.py
+- GitHub repository: `alx-higher_level_programming`
+- Directory: `0x0C-python-almost_a_circle`
+- File: `models/rectangle.py`
    
-7. Display #1
-mandatory
-Score: 0.0% (Checks completed: 0.0%)
-Update the class Rectangle by improving the public method def display(self): to print in stdout the Rectangle instance with the character # by taking care of x and y
-
+## 7. Display #1
+`mandatory`
+ 
+Update the class `Rectangle` by improving the public method `def display(self)`: to print in stdout the `Rectangle` instance with the character `#` by taking care of `x` and `y`
+```
 guillaume@ubuntu:~/$ cat 6-main.py
 #!/usr/bin/python3
 """ 6-main """
@@ -375,25 +386,28 @@ $
 ---$
  ###$
  ###$
-guillaume@ubuntu:~/$ 
-Repo:
+guillaume@ubuntu:~/$
+```
+---
+## Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x0C-python-almost_a_circle
-File: models/rectangle.py
+- GitHub repository: `alx-higher_level_programming`
+- Directory: `0x0C-python-almost_a_circle`
+- File: `models/rectangle.py`
    
-8. Update #0
-mandatory
-Score: 0.0% (Checks completed: 0.0%)
-Update the class Rectangle by adding the public method def update(self, *args): that assigns an argument to each attribute:
+## 8. Update #0
+`mandatory`
+ 
+Update the class `Rectangle` by adding the public method `def update(self, *args)`: that assigns an argument to each attribute:
 
-1st argument should be the id attribute
-2nd argument should be the width attribute
-3rd argument should be the height attribute
-4th argument should be the x attribute
-5th argument should be the y attribute
+- 1st argument should be the `id` attribute
+- 2nd argument should be the `width` attribute
+- 3rd argument should be the `height` attribute
+- 4th argument should be the `x` attribute
+- 5th argument should be the `y` attribute
+
 This type of argument is called a “no-keyword argument” - Argument order is super important.
-
+```
 guillaume@ubuntu:~/$ cat 7-main.py
 #!/usr/bin/python3
 """ Doc """
@@ -426,24 +440,26 @@ guillaume@ubuntu:~/$ ./7-main.py
 [Rectangle] (89) 10/10 - 2/3
 [Rectangle] (89) 4/10 - 2/3
 [Rectangle] (89) 4/5 - 2/3
-guillaume@ubuntu:~/$ 
-Repo:
+guillaume@ubuntu:~/$
+```
+---
+## Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x0C-python-almost_a_circle
-File: models/rectangle.py
+- GitHub repository: `alx-higher_level_programming`
+- Directory: `0x0C-python-almost_a_circle`
+- File: `models/rectangle.py`
    
-9. Update #1
-mandatory
-Score: 0.0% (Checks completed: 0.0%)
-Update the class Rectangle by updating the public method def update(self, *args): by changing the prototype to update(self, *args, **kwargs) that assigns a key/value argument to attributes:
+## 9. Update #1
+`mandatory`
+ 
+Update the class `Rectangle` by updating the public method `def update(self, *args)`: by changing the prototype to `update(self, *args, **kwargs)` that assigns a key/value argument to attributes:
 
-**kwargs can be thought of as a double pointer to a dictionary: key/value
-As Python doesn’t have pointers, **kwargs is not literally a double pointer – describing it as such is just a way of explaining its behavior in terms you’re already familiar with
-**kwargs must be skipped if *args exists and is not empty
-Each key in this dictionary represents an attribute to the instance
+- `**kwargs` can be thought of as a double pointer to a dictionary: key/value
+     - As Python doesn’t have pointers, `**kwargs` is not literally a double pointer – describing it as such is just a way of explaining its behavior in terms you’re already familiar with
+- `**kwargs` must be skipped if `*args` exists and is not empty
+- Each key in this dictionary represents an attribute to the instance
 This type of argument is called a “key-worded argument”. Argument order is not important.
-
+```
 guillaume@ubuntu:~/$ cat 8-main.py
 #!/usr/bin/python3
 """ 8-main """
@@ -472,16 +488,18 @@ guillaume@ubuntu:~/$ ./8-main.py
 [Rectangle] (1) 2/10 - 1/1
 [Rectangle] (89) 3/1 - 2/1
 [Rectangle] (89) 1/3 - 4/2
-guillaume@ubuntu:~/$ 
-Repo:
+guillaume@ubuntu:~/$
+```
+---
+## Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x0C-python-almost_a_circle
-File: models/rectangle.py
+- GitHub repository: `alx-higher_level_programming`
+- Directory: `0x0C-python-almost_a_circle`
+- File: `models/rectangle.py`
    
-10. And now, the Square!
-mandatory
-Score: 0.0% (Checks completed: 0.0%)
+## 10. And now, the Square!
+`mandatory`
+ 
 Write the class Square that inherits from Rectangle:
 
 In the file models/square.py
