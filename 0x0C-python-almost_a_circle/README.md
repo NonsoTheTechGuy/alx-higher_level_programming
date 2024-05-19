@@ -460,6 +460,8 @@ Update the class `Rectangle` by updating the public method `def update(self, *ar
      - As Python doesn’t have pointers, `**kwargs` is not literally a double pointer – describing it as such is just a way of explaining its behavior in terms you’re already familiar with
 - `**kwargs` must be skipped if `*args` exists and is not empty
 - Each key in this dictionary represents an attribute to the instance
+
+
 This type of argument is called a “key-worded argument”. Argument order is not important.
 ```
 guillaume@ubuntu:~/$ cat 8-main.py
