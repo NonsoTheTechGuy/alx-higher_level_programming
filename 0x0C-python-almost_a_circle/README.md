@@ -500,21 +500,24 @@ guillaume@ubuntu:~/$
 - GitHub repository: `alx-higher_level_programming`
 - Directory: `0x0C-python-almost_a_circle`
 - File: `models/rectangle.py`
+
    
 ## 10. And now, the Square!
 `mandatory`
  
-Write the class Square that inherits from Rectangle:
+Write the class `Square` that inherits from `Rectangle`:
 
-In the file models/square.py
-Class Square inherits from Rectangle
-Class constructor: def __init__(self, size, x=0, y=0, id=None)::
-Call the super class with id, x, y, width and height - this super call will use the logic of the __init__ of the Rectangle class. The width and height must be assigned to the value of size
-You must not create new attributes for this class, use all attributes of Rectangle - As reminder: a Square is a Rectangle with the same width and height
-All width, height, x and y validation must inherit from Rectangle - same behavior in case of wrong data
-The overloading __str__ method should return [Square] (<id>) <x>/<y> - <size> - in our case, width or height
+- In the file `models/square.py`
+- Class `Square` inherits from `Rectangle`
+- Class constructor: `def __init__(self, size, x=0, y=0, id=None):`:
+     - Call the super class with `id`, `x`, `y`, `width` and `height` - this super call will use the logic of the `__init__` of the `Rectangle` class. The `width` and `height` must be assigned to the value of `size`
+     - You must not create new attributes for this class, use all attributes of Rectangle - As reminder: a Square is a Rectangle with the same width and height
+     - All `width`, `height`, `x` and `y` validation must inherit from `Rectangle` - same behavior in case of wrong data
+- The overloading `__str__` method should return `[Square] (<id>) <x>/<y> - <size>` - in our case, `width` or `height`
+
+
 As you know, a Square is a special Rectangle, so it makes sense this class Square inherits from Rectangle. Now you have a Square class who has the same attributes and same methods.
-
+```
 guillaume@ubuntu:~/$ cat 9-main.py
 #!/usr/bin/python3
 """ 9-main """
@@ -563,20 +566,23 @@ guillaume@ubuntu:~/$ ./9-main.py
  ###
  ###
  ###
-guillaume@ubuntu:~/$ 
-Repo:
+guillaume@ubuntu:~/$
+```
+---
+## Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x0C-python-almost_a_circle
-File: models/square.py
+- GitHub repository: `alx-higher_level_programming`
+- Directory: `0x0C-python-almost_a_circle`
+- File: `models/square.py`
    
-11. Square size
-mandatory
-Score: 0.0% (Checks completed: 0.0%)
-Update the class Square by adding the public getter and setter size
+## 11. Square size
+`mandatory`
+ 
+Update the class `Square` by adding the public getter and setter `size`
 
-The setter should assign (in this order) the width and the height - with the same value
-The setter should have the same value validation as the Rectangle for width and height - No need to change the exception error message (It should be the one from width)
+- The setter should assign (in this order) the `width` and the `height` - with the same value
+- The setter should have the same value validation as the `Rectangle` for `width` and `height` - No need to change the exception error message (It should be the one from `width`)
+```
 guillaume@ubuntu:~/$ cat 10-main.py
 #!/usr/bin/python3
 """ 10-main """
@@ -600,26 +606,29 @@ guillaume@ubuntu:~/$ ./10-main.py
 5
 [Square] (1) 0/0 - 10
 [TypeError] width must be an integer
-guillaume@ubuntu:~/$ 
-Repo:
+guillaume@ubuntu:~/$
+```
+---
+## Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x0C-python-almost_a_circle
-File: models/square.py
+- GitHub repository: `alx-higher_level_programming`
+- Directory: `0x0C-python-almost_a_circle`
+- File: `models/square.py`
    
-12. Square update
-mandatory
-Score: 0.0% (Checks completed: 0.0%)
-Update the class Square by adding the public method def update(self, *args, **kwargs) that assigns attributes:
+## 12. Square update
+`mandatory`
+ 
+Update the class `Square` by adding the public method `def update(self, *args, **kwargs)` that assigns attributes:
 
-*args is the list of arguments - no-keyworded arguments
-1st argument should be the id attribute
-2nd argument should be the size attribute
-3rd argument should be the x attribute
-4th argument should be the y attribute
-**kwargs can be thought of as a double pointer to a dictionary: key/value (keyworded arguments)
-**kwargs must be skipped if *args exists and is not empty
-Each key in this dictionary represents an attribute to the instance
+- `*args` is the list of arguments - no-keyworded arguments
+     - 1st argument should be the `id` attribute
+     - 2nd argument should be the `size` attribute
+     - 3rd argument should be the `x` attribute
+     - 4th argument should be the `y` attribute
+- `**kwargs` can be thought of as a double pointer to a dictionary: key/value (keyworded arguments)
+- `**kwargs` must be skipped if *args exists and is not empty
+- Each key in this dictionary represents an attribute to the instance
+```
 guillaume@ubuntu:~/$ cat 11-main.py
 #!/usr/bin/python3
 """ 11-main """
@@ -660,25 +669,28 @@ guillaume@ubuntu:~/$ ./11-main.py
 [Square] (1) 12/4 - 2
 [Square] (1) 12/1 - 7
 [Square] (89) 12/1 - 7
-guillaume@ubuntu:~/$ 
-Repo:
+guillaume@ubuntu:~/$
+```
+---
+## Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x0C-python-almost_a_circle
-File: models/square.py
+- GitHub repository: `alx-higher_level_programming`
+- Directory: `0x0C-python-almost_a_circle`
+- File: `models/square.py`
    
-13. Rectangle instance to dictionary representation
-mandatory
-Score: 0.0% (Checks completed: 0.0%)
-Update the class Rectangle by adding the public method def to_dictionary(self): that returns the dictionary representation of a Rectangle:
+## 13. Rectangle instance to dictionary representation
+`mandatory`
+ 
+Update the class `Rectangle` by adding the public method `def to_dictionary(self)`: that returns the dictionary representation of a `Rectangle`:
 
 This dictionary must contain:
 
-id
-width
-height
-x
-y
+- `id`
+- `width`
+- `height`
+- `x`
+- `y`
+```
 guillaume@ubuntu:~/$ cat 12-main.py
 #!/usr/bin/python3
 """ 12-main """
@@ -705,24 +717,27 @@ guillaume@ubuntu:~/$ ./12-main.py
 [Rectangle] (2) 0/0 - 1/1
 [Rectangle] (1) 1/9 - 10/2
 False
-guillaume@ubuntu:~/$ 
-Repo:
+guillaume@ubuntu:~/$
+```
+---
+## Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x0C-python-almost_a_circle
-File: models/rectangle.py
+- GitHub repository: `alx-higher_level_programming`
+- Directory: `0x0C-python-almost_a_circle`
+- File: `models/rectangle.py`
    
-14. Square instance to dictionary representation
-mandatory
-Score: 0.0% (Checks completed: 0.0%)
-Update the class Square by adding the public method def to_dictionary(self): that returns the dictionary representation of a Square:
+## 14. Square instance to dictionary representation
+`mandatory`
+ 
+Update the class `Square` by adding the public method `def to_dictionary(self)`: that returns the dictionary representation of a `Square`:
 
 This dictionary must contain:
 
-id
-size
-x
-y
+- `id`
+- `size`
+- `x`
+- `y`
+```
 guillaume@ubuntu:~/$ cat 13-main.py
 #!/usr/bin/python3
 """ 13-main """
@@ -749,23 +764,26 @@ guillaume@ubuntu:~/$ ./13-main.py
 [Square] (2) 1/0 - 1
 [Square] (1) 2/1 - 10
 False
-guillaume@ubuntu:~/$ 
-Repo:
+guillaume@ubuntu:~/$
+```
+---
+## Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x0C-python-almost_a_circle
-File: models/square.py
+- GitHub repository: `alx-higher_level_programming`
+- Directory: `0x0C-python-almost_a_circle`
+- File: `odels/square.py`
    
-15. Dictionary to JSON string
-mandatory
-Score: 41.36% (Checks completed: 63.64%)
+## 15. Dictionary to JSON string
+`mandatory`
+ 
 JSON is one of the standard formats for sharing data representation.
 
-Update the class Base by adding the static method def to_json_string(list_dictionaries): that returns the JSON string representation of list_dictionaries:
+Update the class `Base` by adding the static method `def to_json_string(list_dictionaries)`: that returns the JSON string representation of `list_dictionaries`:
 
-list_dictionaries is a list of dictionaries
-If list_dictionaries is None or empty, return the string: "[]"
-Otherwise, return the JSON string representation of list_dictionaries
+- `list_dictionaries` is a list of dictionaries
+- If `list_dictionaries` is `None` or empty, return the string: `"[]"`
+- Otherwise, return the JSON string representation of `list_dictionaries`
+```
 guillaume@ubuntu:~/$ cat 14-main.py
 #!/usr/bin/python3
 """ 14-main """
@@ -787,23 +805,26 @@ guillaume@ubuntu:~/$ ./14-main.py
 <class 'dict'>
 [{"x": 2, "width": 10, "id": 1, "height": 7, "y": 8}]
 <class 'str'>
-guillaume@ubuntu:~/$ 
-Repo:
+guillaume@ubuntu:~/$
+```
+---
+## Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x0C-python-almost_a_circle
-File: models/base.py
+- GitHub repository: `alx-higher_level_programming`
+- Directory: `0x0C-python-almost_a_circle`
+- File: `models/base.py`
    
-16. JSON string to file
-mandatory
-Score: 8.78% (Checks completed: 13.51%)
-Update the class Base by adding the class method def save_to_file(cls, list_objs): that writes the JSON string representation of list_objs to a file:
+## 16. JSON string to file
+`mandatory`
+ 
+Update the class `Base` by adding the class method `def save_to_file(cls, list_objs)`: that writes the JSON string representation of `list_objs` to a file:
 
-list_objs is a list of instances who inherits of Base - example: list of Rectangle or list of Square instances
-If list_objs is None, save an empty list
-The filename must be: <Class name>.json - example: Rectangle.json
-You must use the static method to_json_string (created before)
-You must overwrite the file if it already exists
+- `list_objs` is a list of instances who inherits of `Base` - example: list of `Rectangle` or list of `Square` instances
+- If `list_objs` is `None`, save an empty list
+- The filename must be: `<Class name>.json` - example: `Rectangle.json`
+- You must use the static method `to_json_string` (created before)
+- You must overwrite the file if it already exists
+```
 guillaume@ubuntu:~/$ cat 15-main.py
 #!/usr/bin/python3
 """ 15-main """
@@ -820,21 +841,24 @@ if __name__ == "__main__":
 
 guillaume@ubuntu:~/$ ./15-main.py
 [{"y": 8, "x": 2, "id": 1, "width": 10, "height": 7}, {"y": 0, "x": 0, "id": 2, "width": 2, "height": 4}]
-guillaume@ubuntu:~/$ 
-Repo:
+guillaume@ubuntu:~/$
+```
+---
+## Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x0C-python-almost_a_circle
-File: models/base.py
+- GitHub repository: `alx-higher_level_programming`
+- Directory: `0x0C-python-almost_a_circle`
+- File: `models/base.py`
    
-17. JSON string to dictionary
-mandatory
-Score: 47.07% (Checks completed: 72.41%)
-Update the class Base by adding the static method def from_json_string(json_string): that returns the list of the JSON string representation json_string:
+## 17. JSON string to dictionary
+`mandatory`
+ 
+Update the class `Base` by adding the static method `def from_json_string(json_string)`: that returns the list of the JSON string representation `json_string`:
 
-json_string is a string representing a list of dictionaries
-If json_string is None or empty, return an empty list
-Otherwise, return the list represented by json_string
+- `json_string` is a string representing a list of dictionaries
+- If `json_string` is `None` or empty, return an empty list
+- Otherwise, return the list represented by `json_string`
+```
 guillaume@ubuntu:~/$ cat 16-main.py
 #!/usr/bin/python3
 """ 16-main """
@@ -856,25 +880,28 @@ guillaume@ubuntu:~/$ ./16-main.py
 [<class 'list'>] [{'height': 4, 'width': 10, 'id': 89}, {'height': 7, 'width': 1, 'id': 7}]
 [<class 'str'>] [{"height": 4, "width": 10, "id": 89}, {"height": 7, "width": 1, "id": 7}]
 [<class 'list'>] [{'height': 4, 'width': 10, 'id': 89}, {'height': 7, 'width': 1, 'id': 7}]
-guillaume@ubuntu:~/$ 
-Repo:
+guillaume@ubuntu:~/$
+```
+---
+## Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x0C-python-almost_a_circle
-File: models/base.py
+- GitHub repository: `alx-higher_level_programming`
+- Directory: `0x0C-python-almost_a_circle`
+- File: `models/base.py`
    
-18. Dictionary to Instance
-mandatory
-Score: 8.78% (Checks completed: 13.51%)
-Update the class Base by adding the class method def create(cls, **dictionary): that returns an instance with all attributes already set:
+## 18. Dictionary to Instance
+`mandatory`
 
-**dictionary can be thought of as a double pointer to a dictionary
-To use the update method to assign all attributes, you must create a “dummy” instance before:
-Create a Rectangle or Square instance with “dummy” mandatory attributes (width, height, size, etc.)
-Call update instance method to this “dummy” instance to apply your real values
-You must use the method def update(self, *args, **kwargs)
-**dictionary must be used as **kwargs of the method update
-You are not allowed to use eval
+Update the class `Base` by adding the class method `def create(cls, **dictionary)`: that returns an instance with all attributes already set:
+
+- `**dictionary` can be thought of as a double pointer to a dictionary
+- To use the `update` method to assign all attributes, you must create a “dummy” instance before:
+     - Create a `Rectangle` or `Square` instance with “dummy” mandatory attributes (width, height, size, etc.)
+     - Call `update` instance method to this “dummy” instance to apply your real values
+- You must use the method `def update(self, *args, **kwargs)`
+- `**dictionary` must be used as `**kwargs` of the method `update`
+- You are not allowed to use `eval`
+```
 guillaume@ubuntu:~/$ cat 17-main.py
 #!/usr/bin/python3
 """ 17-main """
@@ -895,22 +922,25 @@ guillaume@ubuntu:~/$ ./17-main.py
 [Rectangle] (1) 1/0 - 3/5
 False
 False
-guillaume@ubuntu:~/$ 
-Repo:
+guillaume@ubuntu:~/$
+```
+---
+## Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x0C-python-almost_a_circle
-File: models/base.py
+- GitHub repository: `alx-higher_level_programming`
+- Directory: `0x0C-python-almost_a_circle`
+- File: `models/base.py`
    
-19. File to instances
-mandatory
-Score: 9.85% (Checks completed: 15.15%)
-Update the class Base by adding the class method def load_from_file(cls): that returns a list of instances:
+## 19. File to instances
+`mandatory`
+ 
+Update the class `Base` by adding the class method `def load_from_file(cls)`: that returns a list of instances:
 
-The filename must be: <Class name>.json - example: Rectangle.json
-If the file doesn’t exist, return an empty list
-Otherwise, return a list of instances - the type of these instances depends on cls (current class using this method)
-You must use the from_json_string and create methods (implemented previously)
+- The filename must be: `<Class name>.json` - example: `Rectangle.json`
+- If the file doesn’t exist, return an empty list
+- Otherwise, return a list of instances - the type of these instances depends on `cls` (current class using this method)
+- You must use the `from_json_string` and `create` methods (implemented previously)
+```
 guillaume@ubuntu:~/$ cat 18-main.py
 #!/usr/bin/python3
 """ 18-main """
@@ -967,14 +997,15 @@ guillaume@ubuntu:~/$ ./18-main.py
 ---
 [139785911764976] [Square] (5) 0/0 - 5
 [139785911765032] [Square] (6) 9/1 - 7
-guillaume@ubuntu:~/$ 
-Repo:
+guillaume@ubuntu:~/$
+```
+---
+## Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x0C-python-almost_a_circle
-File: models/base.py
+- GitHub repository: `alx-higher_level_programming`
+- Directory: `0x0C-python-almost_a_circle`
+- File: `models/base.py`
    
 # Author
 
 ## KALU JONAH CHINONSO 💂‍♂️
-
