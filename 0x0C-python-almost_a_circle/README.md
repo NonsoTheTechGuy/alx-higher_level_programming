@@ -892,7 +892,7 @@ guillaume@ubuntu:~/$
 ## 18. Dictionary to Instance
 `mandatory`
 
-Update the class `Base` by adding the class method `def create(cls, **dictionary)`: that returns an instance with all attributes already set:
+Update the class `Base` by adding the class method `def create(cls, **dictionary):` that returns an instance with all attributes already set:
 
 - `**dictionary` can be thought of as a double pointer to a dictionary
 - To use the `update` method to assign all attributes, you must create a “dummy” instance before:
@@ -934,7 +934,7 @@ guillaume@ubuntu:~/$
 ## 19. File to instances
 `mandatory`
  
-Update the class `Base` by adding the class method `def load_from_file(cls)`: that returns a list of instances:
+Update the class `Base` by adding the class method `def load_from_file(cls):` that returns a list of instances:
 
 - The filename must be: `<Class name>.json` - example: `Rectangle.json`
 - If the file doesn’t exist, return an empty list
