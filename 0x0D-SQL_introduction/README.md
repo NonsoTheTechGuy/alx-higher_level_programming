@@ -1,80 +1,75 @@
+# Project - 0x0D. SQL - Introduction 💂‍♂️
+## `SQL`  `MySQL`
+ # Concepts
+## For this project, we expect you to look at these concepts:
 
-Curriculum
-SE Foundations
-Average: 82.28%
-0x0D. SQL - Introduction
-SQL
-MySQL
- Weight: 1
- Project will start May 21, 2024 6:00 AM, must end by May 22, 2024 6:00 AM
- Checker was released at May 21, 2024 12:00 PM
- An auto review will be launched at the deadline
-Concepts
-For this project, we expect you to look at these concepts:
+- [Databases](https://intranet.alxswe.com/concepts/37)
+- [Databases](https://intranet.alxswe.com/concepts/556)
 
-Databases
-Databases
+![image](https://github.com/NonsoTheTechGuy/alx-higher_level_programming/assets/92136146/a927fe41-6990-42c4-9c73-bee46c035958)
 
 
-Resources
-Read or watch:
+# Resources
+## Read or watch:
 
-What is Database & SQL?
-A Basic MySQL Tutorial
-Basic SQL statements: DDL and DML (no need to read the chapter “Privileges”)
-Basic queries: SQL and RA
-SQL technique: functions
-SQL technique: subqueries
-What makes the big difference between a backtick and an apostrophe?
-MySQL Cheat Sheet
-MySQL 8.0 SQL Statement Syntax
-installing MySQL in Ubuntu 20.04
-Learning Objectives
-At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
+- [What is Database & SQL?](https://intranet.alxswe.com/rltoken/yyRKTEdRkYEVlRgZPbasjw)
+- [A Basic MySQL Tutorial](https://intranet.alxswe.com/rltoken/sV2PtK5YfQsXWW1malRZ5Q)
+- [Basic SQL statements: DDL and DML](https://intranet.alxswe.com/rltoken/IUKo4-UaRZSKPvXr5u9oBw) (no need to read the chapter “Privileges”)
+- [Basic queries: SQL and RA](https://intranet.alxswe.com/rltoken/rXKvu2u7vg1Hj6bnX7UgMg)
+- [SQL technique: functions](https://intranet.alxswe.com/rltoken/-Riv_dzSYsJyvy-LlaO6Mg)
+- [SQL technique: subqueries](https://intranet.alxswe.com/rltoken/QpIXoR--8eBIaidgSWYsBQ)
+- [What makes the big difference between a backtick and an apostrophe?](https://intranet.alxswe.com/rltoken/Gt0nFJPJRwW2Y0izzwbVrw)
+- [MySQL Cheat Sheet](https://intranet.alxswe.com/rltoken/1oU1LwCksQLXjs6fZYezrw)
+- [MySQL 8.0 SQL Statement Syntax](https://intranet.alxswe.com/rltoken/HmdmLiYBM0Q34iCYPWd9XQ)
+- [installing MySQL in Ubuntu 20.04](https://intranet.alxswe.com/rltoken/IpYI9rgbwfjxOAQQgpHCmQ)
 
-General
-What’s a database
-What’s a relational database
-What does SQL stand for
-What’s MySQL
-How to create a database in MySQL
-What does DDL and DML stand for
-How to CREATE or ALTER a table
-How to SELECT data from a table
-How to INSERT, UPDATE or DELETE data
-What are subqueries
-How to use MySQL functions
-Copyright - Plagiarism
-You are tasked to come up with solutions for the tasks below yourself to meet with the above learning objectives.
-You will not be able to meet the objectives of this or any following project by copying and pasting someone else’s work.
-You are not allowed to publish any content of this project.
-Any form of plagiarism is strictly forbidden and will result in removal from the program.
-Requirements
-General
-Allowed editors: vi, vim, emacs
-All your files will be executed on Ubuntu 20.04 LTS using MySQL 8.0 (version 8.0.25)
-All your files should end with a new line
-All your SQL queries should have a comment just before (i.e. syntax above)
-All your files should start by a comment describing the task
-All SQL keywords should be in uppercase (SELECT, WHERE…)
-A README.md file, at the root of the folder of the project, is mandatory
-The length of your files will be tested using wc
-More Info
-Comments for your SQL file:
+# Learning Objectives
+At the end of this project, you are expected to be able to [explain to anyone](https://intranet.alxswe.com/rltoken/-zY4kpQMjYkkbqlEb9W37A), without the help of Google:
+
+## General
+- What’s a database
+- What’s a relational database
+- What does SQL stand for
+- What’s MySQL
+- How to create a database in MySQL
+- What does `DDL` and `DML` stand for
+- How to `CREATE` or `ALTER` a table
+- How to `SELECT` data from a table
+- How to `INSERT`, `UPDATE` or `DELETE` data
+- What are `subqueries`
+- How to use MySQL functions
+
+# Requirements
+## General
+- Allowed editors: `vi`, `vim`, `emacs`
+- All your files will be executed on Ubuntu 20.04 LTS using `MySQL 8.0` (version 8.0.25)
+- All your files should end with a new line
+- All your SQL queries should have a comment just before (i.e. syntax above)
+- All your files should start by a comment describing the task
+- All SQL keywords should be in uppercase (`SELECT`, `WHERE`…)
+- A `README.md` file, at the root of the folder of the project, is mandatory
+- The length of your files will be tested using `wc`
+
+## More Info
+### Comments for your SQL file:
+```
 $ cat my_script.sql
 -- 3 first students in the Batch ID=3
 -- because Batch 3 is the best!
 SELECT id, name FROM students WHERE batch_id = 3 ORDER BY created_at DESC LIMIT 3;
 $
-Install MySQL 8.0 on Ubuntu 20.04 LTS
+```
+## Install MySQL 8.0 on Ubuntu 20.04 LTS
+```
 $ sudo apt update
 $ sudo apt install mysql-server
 ...
 $ mysql --version
 mysql  Ver 8.0.25-0ubuntu0.20.04.1 for Linux on x86_64 ((Ubuntu))
 $
+```
 Connect to your MySQL server:
-
+```
 $ sudo mysql
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 11
@@ -92,13 +87,16 @@ mysql>
 mysql> quit
 Bye
 $
-Use “container-on-demand” to run MySQL
-In the container, credentials are root/root
+```
 
-Ask for container Ubuntu 20.04
-Connect via SSH
-OR connect via the Web terminal
-In the container, you should start MySQL before playing with it:
+## Use “container-on-demand” to run MySQL
+### In the container, credentials are `root/root`
+
+- Ask for container `Ubuntu 20.04`
+- Connect via SSH
+- OR connect via the Web terminal
+- In the container, you should start MySQL before playing with it:
+```
 $ service mysql start                                                   
  * Starting MySQL database server mysqld 
 $
@@ -109,15 +107,15 @@ mysql
 performance_schema                                                                         
 sys                      
 $
-In the container, credentials are root/root
+```
+In the container, credentials are `root/root`
 
-Quiz questions
-Great! You've completed the quiz successfully! Keep going! (Show quiz)
-Tasks
-0. List databases
-mandatory
+ 
+# Tasks
+## 0. List databases
+`mandatory`
 Write a script that lists all databases of your MySQL server.
-
+```
 guillaume@ubuntu:~/$ cat 0-list_databases.sql | mysql -hlocalhost -uroot -p
 Enter password: 
 Database                                                                                     
@@ -126,19 +124,22 @@ information_schema
 mysql                                                                                        
 performance_schema                                                                           
 sys        
-guillaume@ubuntu:~/$ 
-Repo:
+guillaume@ubuntu:~/$
+```
+---
+### Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x0D-SQL_introduction
-File: 0-list_databases.sql
+- GitHub repository: `alx-higher_level_programming`
+- Directory: `0x0D-SQL_introduction`
+- File: `0-list_databases.sql`
   
-1. Create a database
-mandatory
-Write a script that creates the database hbtn_0c_0 in your MySQL server.
+# 1. Create a database
+`mandatory`
+Write a script that creates the database `hbtn_0c_0` in your MySQL server.
 
-If the database hbtn_0c_0 already exists, your script should not fail
-You are not allowed to use the SELECT or SHOW statements
+- If the database `hbtn_0c_0` already exists, your script should not fail
+- You are not allowed to use the `SELECT` or `SHOW` statements
+```
 guillaume@ubuntu:~/$ cat 1-create_database_if_missing.sql | mysql -hlocalhost -uroot -p
 Enter password: 
 guillaume@ubuntu:~/$ cat 0-list_databases.sql | mysql -hlocalhost -uroot -p
@@ -150,19 +151,22 @@ mysql
 performance_schema
 guillaume@ubuntu:~/$ cat 1-create_database_if_missing.sql | mysql -hlocalhost -uroot -p
 Enter password: 
-guillaume@ubuntu:~/$ 
-Repo:
+guillaume@ubuntu:~/$
+```
+---
+## Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x0D-SQL_introduction
-File: 1-create_database_if_missing.sql
+- GitHub repository: `alx-higher_level_programming`
+- Directory: `0x0D-SQL_introduction`
+- File: `1-create_database_if_missing.sql`
   
-2. Delete a database
-mandatory
-Write a script that deletes the database hbtn_0c_0 in your MySQL server.
+## 2. Delete a database
+`mandatory`
+Write a script that deletes the database `hbtn_0c_0` in your MySQL server.
 
-If the database hbtn_0c_0 doesn’t exist, your script should not fail
-You are not allowed to use the SELECT or SHOW statements
+- If the database `hbtn_0c_0` doesn’t exist, your script should not fail
+- You are not allowed to use the `SELECT` or `SHOW` statements
+```
 guillaume@ubuntu:~/$ cat 0-list_databases.sql | mysql -hlocalhost -uroot -p
 Enter password: 
 Database                                                                                     
@@ -180,18 +184,21 @@ information_schema
 mysql                                                                                        
 performance_schema                                                                           
 sys        
-guillaume@ubuntu:~/$ 
-Repo:
+guillaume@ubuntu:~/$
+```
+---
+## Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x0D-SQL_introduction
-File: 2-remove_database.sql
+- GitHub repository: `alx-higher_level_programming`
+- Directory: `0x0D-SQL_introduction`
+- File: `2-remove_database.sql`
   
-3. List tables
-mandatory
+## 3. List tables
+`mandatory`
 Write a script that lists all the tables of a database in your MySQL server.
 
-The database name will be passed as argument of mysql command (in the following example: mysql is the name of the database)
+- The database name will be passed as argument of `mysql` command (in the following example: `mysql` is the name of the database)
+```
 guillaume@ubuntu:~/$ cat 3-list_tables.sql | mysql -hlocalhost -uroot -p mysql
 Enter password: 
 Tables_in_mysql                                                                              
@@ -230,76 +237,88 @@ time_zone_name
 time_zone_transition                                                                         
 time_zone_transition_type                                                                    
 user
-guillaume@ubuntu:~/$ 
-Repo:
+guillaume@ubuntu:~/$
+```
+---
+## Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x0D-SQL_introduction
-File: 3-list_tables.sql
+- GitHub repository: `alx-higher_level_programming`
+- Directory: `0x0D-SQL_introduction`
+- File: `3-list_tables.sql`
   
-4. First table
-mandatory
-Write a script that creates a table called first_table in the current database in your MySQL server.
+## 4. First table
+`mandatory`
+Write a script that creates a table called `first_table` in the current database in your MySQL server.
 
-first_table description:
-id INT
-name VARCHAR(256)
-The database name will be passed as an argument of the mysql command
-If the table first_table already exists, your script should not fail
-You are not allowed to use the SELECT or SHOW statements
+- `first_table` description:
+     - `id` INT
+     - `name` VARCHAR(256)
+- The database name will be passed as an argument of the `mysql` command
+- If the table `first_table` already exists, your script should not fail
+- You are not allowed to use the `SELECT` or `SHOW` statements
+```
 guillaume@ubuntu:~/$ cat 4-first_table.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
 Enter password: 
 guillaume@ubuntu:~/$ cat 3-list_tables.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
 Enter password: 
 Tables_in_hbtn_0c_0
 first_table
-guillaume@ubuntu:~/$ 
-Repo:
+guillaume@ubuntu:~/$
+```
+---
+## Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x0D-SQL_introduction
-File: 4-first_table.sql
+- GitHub repository: `alx-higher_level_programming`
+- Directory: `0x0D-SQL_introduction`
+- File: `4-first_table.sql`
   
-5. Full description
-mandatory
-Write a script that prints the full description of the table first_table from the database hbtn_0c_0 in your MySQL server.
+## 5. Full description
+`mandatory`
+Write a script that prints the full description of the table `first_table` from the database `hbtn_0c_0` in your MySQL server.
 
-The database name will be passed as an argument of the mysql command
-You are not allowed to use the DESCRIBE or EXPLAIN statements
+- The database name will be passed as an argument of the `mysql` command
+- You are not allowed to use the `DESCRIBE` or `EXPLAIN` statements
+```
 guillaume@ubuntu:~/$ cat 5-full_table.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
 Enter password: 
 Table   Create Table                                                                         
 first_table     CREATE TABLE `first_table` (\n  `id` int DEFAULT NULL,\n  `name` varchar(256) DEFAULT NULL\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci        
-guillaume@ubuntu:~/$ 
-Repo:
+guillaume@ubuntu:~/$
+```
+---
+## Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x0D-SQL_introduction
-File: 5-full_table.sql
+- GitHub repository: `alx-higher_level_programming`
+- Directory: `0x0D-SQL_introduction`
+- File: `5-full_table.sql`
   
-6. List all in table
-mandatory
-Write a script that lists all rows of the table first_table from the database hbtn_0c_0 in your MySQL server.
+## 6. List all in table
+`mandatory`
+Write a script that lists all rows of the table `first_table` from the database `hbtn_0c_0` in your MySQL server.
 
-All fields should be printed
-The database name will be passed as an argument of the mysql command
+- All fields should be printed
+- The database name will be passed as an argument of the `mysql` command
+```
 guillaume@ubuntu:~/$ cat 6-list_values.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
 Enter password: 
-guillaume@ubuntu:~/$ 
-Repo:
+guillaume@ubuntu:~/$
+```
+---
+## Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x0D-SQL_introduction
-File: 6-list_values.sql
+- GitHub repository: `alx-higher_level_programming`
+- Directory: `0x0D-SQL_introduction`
+- File: `6-list_values.sql`
   
-7. First add
-mandatory
-Write a script that inserts a new row in the table first_table (database hbtn_0c_0) in your MySQL server.
+## 7. First add
+`mandatory`
+Write a script that inserts a new row in the table `first_table` (database `hbtn_0c_0`) in your MySQL server.
 
-New row:
-id = 89
-name = Best School
-The database name will be passed as an argument of the mysql command
+- New row:
+     - `id` = `89`
+     - `name` = `Best School`
+- The database name will be passed as an argument of the `mysql` command
+```
 guillaume@ubuntu:~/$ cat 7-insert_value.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
 Enter password: 
 guillaume@ubuntu:~/$ cat 6-list_values.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
@@ -316,52 +335,60 @@ id  name
 89  Best School
 89  Best School
 89  Best School
-guillaume@ubuntu:~/$ 
-Repo:
+guillaume@ubuntu:~/$
+```
+---
+## Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x0D-SQL_introduction
-File: 7-insert_value.sql
+- GitHub repository: `alx-higher_level_programming`
+- Directory: `0x0D-SQL_introduction`
+- File: `7-insert_value.sql`
   
-8. Count 89
-mandatory
-Write a script that displays the number of records with id = 89 in the table first_table of the database hbtn_0c_0 in your MySQL server.
+## 8. Count 89
+`mandatory`
+Write a script that displays the number of records with `id = 89` in the table `first_table` of the database `hbtn_0c_0` in your MySQL server.
 
-The database name will be passed as an argument of the mysql command
+- The database name will be passed as an argument of the `mysql` command
+```
 guillaume@ubuntu:~/$ cat 8-count_89.sql | mysql -hlocalhost -uroot -p hbtn_0c_0 | tail -1
 Enter password: 
 3
-guillaume@ubuntu:~/$ 
-Repo:
+guillaume@ubuntu:~/$
+```
+---
+## Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x0D-SQL_introduction
-File: 8-count_89.sql
+- GitHub repository: `alx-higher_level_programming`
+- Directory: `0x0D-SQL_introduction`
+- File: `8-count_89.sql`
   
-9. Full creation
-mandatory
-Write a script that creates a table second_table in the database hbtn_0c_0 in your MySQL server and add multiples rows.
+## 9. Full creation
+`mandatory`
+Write a script that creates a table `second_table` in the database `hbtn_0c_0` in your MySQL server and add multiples rows.
 
-second_table description:
-id INT
-name VARCHAR(256)
-score INT
-The database name will be passed as an argument to the mysql command
-If the table second_table already exists, your script should not fail
-You are not allowed to use the SELECT and SHOW statements
-Your script should create these records:
-id = 1, name = “John”, score = 10
-id = 2, name = “Alex”, score = 3
-id = 3, name = “Bob”, score = 14
-id = 4, name = “George”, score = 8
+- `second_table` description:
+     - `id` INT
+     - `name` VARCHAR(256)
+     - `score` INT
+- The database name will be passed as an argument to the `mysql` command
+- If the table `second_table` already exists, your script should not fail
+- You are not allowed to use the `SELECT` and `SHOW` statements
+- Your script should create these records:
+     - `id` = 1, `name` = “John”, `score` = 10
+     - `id` = 2, `name` = “Alex”, `score` = 3
+     - `id` = 3, `name` = “Bob”, `score` = 14
+     - `id` = 4, `name` = “George”, `score` = 8
+```
 guillaume@ubuntu:~/$ cat 9-full_creation.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
 Enter password: 
-guillaume@ubuntu:~/$ 
-Repo:
+guillaume@ubuntu:~/$
+```
+---
+## Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x0D-SQL_introduction
-File: 9-full_creation.sql
+- GitHub repository: `alx-higher_level_programming`
+- Directory: `0x0D-SQL_introduction`
+- File: `9-full_creation.sql`
   
 10. List by best
 mandatory
