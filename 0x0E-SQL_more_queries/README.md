@@ -186,6 +186,7 @@ guillaume@ubuntu:~/$
   
 ## 2. Read user
 `mandatory`
+
 Write a script that creates the database `hbtn_0d_2` and the user `user_0d_2`.
 
 - `user_0d_2` should have only SELECT privilege in the database `hbtn_0d_2`
@@ -213,6 +214,7 @@ guillaume@ubuntu:~/$
   
 ## 3. Always a name
 `mandatory`
+
 Write a script that creates the table `force_name` on your MySQL server.
 
 - `force_name` description:
@@ -247,6 +249,7 @@ guillaume@ubuntu:~/$
   
 ## 4. ID can't be null
 `mandatory`
+
 Write a script that creates the table `id_not_null` on your MySQL server.
 
 - `id_not_null` description:
@@ -281,6 +284,7 @@ guillaume@ubuntu:~/$
   
 ## 5. Unique ID
 `mandatory`
+
 Write a script that creates the table `unique_id` on your MySQL server.
 
 - `unique_id` description:
@@ -315,13 +319,14 @@ guillaume@ubuntu:~/$
   
 ## 6. States table
 `mandatory`
+
 Write a script that creates the database `hbtn_0d_usa` and the table `states` (in the database `hbtn_0d_usa`) on your MySQL server.
 
-`states` description:
-`id` INT unique, auto generated, can’t be null and is a primary key
-`name` VARCHAR(256) can’t be null
-If the database `hbtn_0d_usa` already exists, your script should not fail
-If the table `states` already exists, your script should not fail
+- `states` description:
+     - `id` INT unique, auto generated, can’t be null and is a primary key
+     - `name` VARCHAR(256) can’t be null
+- If the database `hbtn_0d_usa` already exists, your script should not fail
+- If the table `states` already exists, your script should not fail
 ```
 guillaume@ubuntu:~/$ cat 6-states.sql | mysql -hlocalhost -uroot -p
 Enter password: 
@@ -343,7 +348,8 @@ guillaume@ubuntu:~/$
 - File: `6-states.sql`
   
 ## 7. Cities table
-`mandatory`
+`mandatory` 
+
 Write a script that creates the database `hbtn_0d_usa` and the table `cities` (in the database `hbtn_0d_usa`) on your MySQL server.
 
 `cities` description:
@@ -379,6 +385,7 @@ guillaume@ubuntu:~/$
   
 ## 8. Cities of California
 `mandatory`
+
 Write a script that lists all the cities of California that can be found in the database `hbtn_0d_usa`.
 
 - The `states` table contains only one record where `name` = `California` (but the `id` can be different, as per the example)
@@ -418,6 +425,7 @@ guillaume@ubuntu:~/$
   
 ## 9. Cities by States
 `mandatory`
+
 Write a script that lists all cities contained in the database `hbtn_0d_usa`.
 
 - Each record should display: `cities.id` - `cities.name` - `states.name`
@@ -461,6 +469,7 @@ guillaume@ubuntu:~/$
   
 ## 10. Genre ID by show
 `mandatory`
+
 Import the database dump from `hbtn_0d_tvshows` to your MySQL server: [download](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql)
 
 Write a script that lists all shows contained in `hbtn_0d_tvshows` that have at least one genre linked.
@@ -503,6 +512,7 @@ guillaume@ubuntu:~/$
   
 ## 11. Genre ID for all shows
 `mandatory`
+
 Import the database dump of `hbtn_0d_tvshows` to your MySQL server: [download](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql) (same as `10-genre_id_by_show.sql`)
 
 Write a script that lists all shows contained in the database `hbtn_0d_tvshows`.
@@ -548,6 +558,7 @@ guillaume@ubuntu:~/$
   
 ## 12. No genre
 `mandatory`
+
 Import the database dump from `hbtn_0d_tvshows` to your MySQL server: [download](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql) (same as `11-genre_id_all_shows.sql`)
 
 Write a script that lists all shows contained in `hbtn_0d_tvshows` without a genre linked.
@@ -573,6 +584,7 @@ guillaume@ubuntu:~/$
   
 ## 13. Number of shows by genre
 `mandatory`
+
 Import the database dump from `hbtn_0d_tvshows` to your MySQL server: [download](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql) (same as `12-no_genre.sql`)
 
 Write a script that lists all genres from `hbtn_0d_tvshows` and displays the number of shows linked to each.
@@ -607,6 +619,7 @@ guillaume@ubuntu:~/$
   
 ## 14. My genres
 `mandatory`
+
 Import the database dump from `hbtn_0d_tvshows` to your MySQL server: [download](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql) (same as `13-count_shows_by_genre.sql`)
 
 Write a script that uses the `hbtn_0d_tvshows` database to lists all genres of the show `Dexter`.
@@ -637,6 +650,7 @@ File: `14-my_genres.sql`
   
 ## 15. Only Comedy
 `mandatory`
+
 Import the database dump from `hbtn_0d_tvshows` to your MySQL server: [download](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql) (same as `14-my_genres.sql`)
 
 Write a script that lists all Comedy shows in the database `hbtn_0d_tvshows`.
@@ -666,6 +680,7 @@ guillaume@ubuntu:~/$
   
 ## 16. List shows and genres
 `mandatory`
+
 Import the database dump from hbtn_0d_tvshows to your MySQL server: [download](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql) (same as `15-comedy_only.sql`)
 
 Write a script that lists all shows, and all genres linked to that show, from the database `hbtn_0d_tvshows`.
