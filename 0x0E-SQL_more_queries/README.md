@@ -1,80 +1,75 @@
+# Project - 0x0E. SQL - More queries :🪗
+## `SQL` `MySQL`
 
-Curriculum
-SE Foundations
-Average: 81.24%
-0x0E. SQL - More queries
-SQL
-MySQL
- Weight: 1
- Project will start May 22, 2024 6:00 AM, must end by May 23, 2024 6:00 AM
- Checker was released at May 22, 2024 12:00 PM
- An auto review will be launched at the deadline
+![image](https://github.com/NonsoTheTechGuy/alx-higher_level_programming/assets/92136146/4ec2d03b-4e35-4d12-871c-9377c0a3f050)
 
+## Resources
+## Read or watch:
 
-Resources
-Read or watch:
+- [How To Create a New User and Grant Permissions in MySQL](https://intranet.alxswe.com/rltoken/RniBKj48bnIN8xpXhGl1yA)
+- [How To Use MySQL GRANT Statement To Grant Privileges To a User](https://intranet.alxswe.com/rltoken/lhaKcRpljC_zRu1NRTpU6Q)
+- [MySQL constraints](https://intranet.alxswe.com/rltoken/LrovGa6N-OE2ID_tpWZRaQ)
+- [SQL technique: subqueries](https://intranet.alxswe.com/rltoken/kR71h5zjkPtx4kBoVf7q0g)
+- [Basic query operation: the join](https://intranet.alxswe.com/rltoken/rNMJeQ1jbNTCljbvCSjf6w)
+- [SQL technique: multiple joins and the distinct keyword](https://intranet.alxswe.com/rltoken/HhZ6TJ1q5S0aR4lhfpKdOQ)
+- [SQL technique: join types](https://intranet.alxswe.com/rltoken/T6FZUQdsMzr8hgNInBzudA)
+- [SQL technique: union and minus](https://intranet.alxswe.com/rltoken/Nd-sdM8QUpf0YKIlXzVv4w)
+- [MySQL Cheat Sheet](https://intranet.alxswe.com/rltoken/iSNyinU6SPWTGDUWMmcRkg)
+- [The Seven Types of SQL Joins](https://intranet.alxswe.com/rltoken/-plhBsra0N7BOuFoEg--zg)
+- [MySQL Tutorial](https://intranet.alxswe.com/rltoken/I4Lws_eQrIrNTbkZvvk-oQ)
+- [SQL Style Guide](https://intranet.alxswe.com/rltoken/051eAEP_rePBU7jeh879GA)
+- [MySQL 8.0 SQL Statement Syntax](https://intranet.alxswe.com/rltoken/YavbYiraYFr8oTukT_N6eQ)
 
-How To Create a New User and Grant Permissions in MySQL
-How To Use MySQL GRANT Statement To Grant Privileges To a User
-MySQL constraints
-SQL technique: subqueries
-Basic query operation: the join
-SQL technique: multiple joins and the distinct keyword
-SQL technique: join types
-SQL technique: union and minus
-MySQL Cheat Sheet
-The Seven Types of SQL Joins
-MySQL Tutorial
-SQL Style Guide
-MySQL 8.0 SQL Statement Syntax
 Extra resources around relational database model design:
 
-Design
-Normalization
-ER Modeling
-Learning Objectives
-At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
+- [Design](https://intranet.alxswe.com/rltoken/EWLRPeqr5sQ9AqfoG_KXxw)
+- [Normalization](https://intranet.alxswe.com/rltoken/mqBhYoSYbhH5ZZrhDcY0kA)
+- [ER Modeling](https://intranet.alxswe.com/rltoken/R0exkJmf-2ddKjGfa8D0dA)
 
-General
-How to create a new MySQL user
-How to manage privileges for a user to a database or table
-What’s a PRIMARY KEY
-What’s a FOREIGN KEY
-How to use NOT NULL and UNIQUE constraints
-How to retrieve datas from multiple tables in one request
-What are subqueries
-What are JOIN and UNION
-Copyright - Plagiarism
-You are tasked to come up with solutions for the tasks below yourself to meet with the above learning objectives.
-You will not be able to meet the objectives of this or any following project by copying and pasting someone else’s work.
-You are not allowed to publish any content of this project.
-Any form of plagiarism is strictly forbidden and will result in removal from the program.
-Requirements
-General
-Allowed editors: vi, vim, emacs
-All your files will be executed on Ubuntu 20.04 LTS using MySQL 8.0 (version 8.0.25)
-All your files should end with a new line
-All your SQL queries should have a comment just before (i.e. syntax above)
-All your files should start by a comment describing the task
-All SQL keywords should be in uppercase (SELECT, WHERE…)
-A README.md file, at the root of the folder of the project, is mandatory
-The length of your files will be tested using wc
-More Info
-Comments for your SQL file:
+## Learning Objectives
+At the end of this project, you are expected to be able to [explain to anyone](https://intranet.alxswe.com/rltoken/0qci3VdIVdKJXldEZ6zAjA), without the help of Google:
+
+## General
+- How to create a new MySQL user
+- How to manage privileges for a user to a database or table
+- What’s a `PRIMARY KEY`
+- What’s a `FOREIGN KEY`
+- How to use `NOT NULL` and `UNIQUE` constraints
+- How to retrieve datas from multiple tables in one request
+- What are subqueries
+- What are `JOIN` and `UNION`
+ 
+## Requirements
+## General
+- Allowed editors: `vi`, `vim`, `emacs`
+- All your files will be executed on Ubuntu 20.04 LTS using `MySQL 8.0` (version 8.0.25)
+- All your files should end with a new line
+- All your SQL queries should have a comment just before (i.e. syntax above)
+- All your files should start by a comment describing the task
+- All SQL keywords should be in uppercase (`SELECT`, `WHERE…`)
+- A `README.md` file, at the root of the folder of the project, is mandatory
+- The length of your files will be tested using `w`
+
+## More Info
+### Comments for your SQL file:
+```
 $ cat my_script.sql
 -- 3 first students in the Batch ID=3
 -- because Batch 3 is the best!
 SELECT id, name FROM students WHERE batch_id = 3 ORDER BY created_at DESC LIMIT 3;
 $
+```
 Install MySQL 8.0 on Ubuntu 20.04 LTS
+```
 $ sudo apt update
 $ sudo apt install mysql-server
 ...
 $ mysql --version
 mysql  Ver 8.0.25-0ubuntu0.20.04.1 for Linux on x86_64 ((Ubuntu))
 $
+```
 Connect to your MySQL server:
-
+```
 $ sudo mysql
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 11
@@ -92,13 +87,15 @@ mysql>
 mysql> quit
 Bye
 $
+```
 Use “container-on-demand” to run MySQL
-In the container, credentials are root/root
+In the container, credentials are `root/root`
 
-Ask for container Ubuntu 20.04
+Ask for container `Ubuntu 20.04`
 Connect via SSH
 OR connect via the Web terminal
 In the container, you should start MySQL before playing with it:
+```
 $ service mysql start                                                   
  * Starting MySQL database server mysqld 
 $
@@ -109,9 +106,11 @@ mysql
 performance_schema                                                                         
 sys                      
 $
-In the container, credentials are root/root
+```
+In the container, credentials are `root/root`
 
 How to import a SQL dump
+```
 $ echo "CREATE DATABASE hbtn_0d_tvshows;" | mysql -uroot -p
 Enter password: 
 $ curl "https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql" -s | mysql -uroot -p hbtn_0d_tvshows
@@ -128,13 +127,35 @@ id  name
 7   Suspense
 8   Thriller
 $
+```
+![image](https://github.com/NonsoTheTechGuy/alx-higher_level_programming/assets/92136146/ed86da39-af33-41d5-99f3-c55fdf23db5d)
+![image](https://github.com/NonsoTheTechGuy/alx-higher_level_programming/assets/92136146/e9f1c02b-5801-4eac-be99-78091c76b4b4)
+
+ ![image](https://github.com/NonsoTheTechGuy/alx-higher_level_programming/assets/92136146/1d9d5c1c-27ad-4a6b-b648-89872bf5a0db)
+![image](https://github.com/NonsoTheTechGuy/alx-higher_level_programming/assets/92136146/690ae7ca-1ce9-46e4-a6b5-1ca1b4a3e063)
+![image](https://github.com/NonsoTheTechGuy/alx-higher_level_programming/assets/92136146/4114e0de-6f4c-4a38-ad65-5680188169f5)
+
+![image](https://github.com/NonsoTheTechGuy/alx-higher_level_programming/assets/92136146/1e4b1e98-0ab3-4434-9a7b-4946273f414d)
+![image](https://github.com/NonsoTheTechGuy/alx-higher_level_programming/assets/92136146/40666a54-1ed3-479a-9686-36231609e850)
+
+![image](https://github.com/NonsoTheTechGuy/alx-higher_level_programming/assets/92136146/8d83afb8-f489-4dfc-bd3d-fb82bc22b098)
+![image](https://github.com/NonsoTheTechGuy/alx-higher_level_programming/assets/92136146/b818a9db-4339-44ef-8d24-cb07e51bad7b)
+
+![image](https://github.com/NonsoTheTechGuy/alx-higher_level_programming/assets/92136146/6e1ba55a-f960-4b03-9178-cba2641e2ded)
+![image](https://github.com/NonsoTheTechGuy/alx-higher_level_programming/assets/92136146/9b29d51c-79ac-4497-ba75-80fda956f2d5)
+
+![image](https://github.com/NonsoTheTechGuy/alx-higher_level_programming/assets/92136146/8efaee16-f1e9-4630-b88d-efddc9445d62)
+![image](https://github.com/NonsoTheTechGuy/alx-higher_level_programming/assets/92136146/f2c6c169-5bdf-4002-bf20-45a41deebd1c)
+
+![image](https://github.com/NonsoTheTechGuy/alx-higher_level_programming/assets/92136146/e23ff112-c820-4b8b-9f53-ea20be900217)
+![image](https://github.com/NonsoTheTechGuy/alx-higher_level_programming/assets/92136146/7c0888fa-90ba-48d9-9600-6098d7c359c4)
 
 
-Quiz questions
-Great! You've completed the quiz successfully! Keep going! (Show quiz)
-Tasks
-0. My privileges!
-mandatory
+
+## Tasks
+## 0. My privileges!
+`mandatory`
+
 Write a script that lists all privileges of the MySQL users user_0d_1 and user_0d_2 on your server (in localhost).
 
 guillaume@ubuntu:~/$ cat 0-privileges.sql | mysql -hlocalhost -uroot -p
