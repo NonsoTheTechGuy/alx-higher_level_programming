@@ -674,14 +674,14 @@ guillaume@ubuntu:~/$
 
 ## Repo:
 
-- GitHub repository: alx-higher_level_programming`
-- Directory: 0x0E-SQL_more_queries`
-- File: 15-comedy_only.sql`
+- GitHub repository: `alx-higher_level_programming`
+- Directory: `0x0E-SQL_more_queries`
+- File: `15-comedy_only.sql`
   
 ## 16. List shows and genres
 `mandatory`
 
-Import the database dump from hbtn_0d_tvshows to your MySQL server: [download](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql) (same as `15-comedy_only.sql`)
+Import the database dump from `hbtn_0d_tvshows` to your MySQL server: [download](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql) (same as `15-comedy_only.sql`)
 
 Write a script that lists all shows, and all genres linked to that show, from the database `hbtn_0d_tvshows`.
 
