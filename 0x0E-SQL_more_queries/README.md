@@ -130,27 +130,6 @@ $
 ```
 ![image](https://github.com/NonsoTheTechGuy/alx-higher_level_programming/assets/92136146/ed86da39-af33-41d5-99f3-c55fdf23db5d)
 
-
-![image](https://github.com/NonsoTheTechGuy/alx-higher_level_programming/assets/92136146/1d9d5c1c-27ad-4a6b-b648-89872bf5a0db)
-
-
-![image](https://github.com/NonsoTheTechGuy/alx-higher_level_programming/assets/92136146/1e4b1e98-0ab3-4434-9a7b-4946273f414d)
-
-
-![image](https://github.com/NonsoTheTechGuy/alx-higher_level_programming/assets/92136146/8d83afb8-f489-4dfc-bd3d-fb82bc22b098)
-
-
-![image](https://github.com/NonsoTheTechGuy/alx-higher_level_programming/assets/92136146/6e1ba55a-f960-4b03-9178-cba2641e2ded)
-
-
-![image](https://github.com/NonsoTheTechGuy/alx-higher_level_programming/assets/92136146/8efaee16-f1e9-4630-b88d-efddc9445d62)
-
-
-![image](https://github.com/NonsoTheTechGuy/alx-higher_level_programming/assets/92136146/e23ff112-c820-4b8b-9f53-ea20be900217)
-
-
-
-
 ## Tasks
 ## 0. My privileges!
 `mandatory`
