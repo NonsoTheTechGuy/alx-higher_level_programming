@@ -48,7 +48,7 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 - All your files should start by a comment describing the task
 - All SQL keywords should be in uppercase (`SELECT`, `WHERE…`)
 - A `README.md` file, at the root of the folder of the project, is mandatory
-- The length of your files will be tested using `w`
+- The length of your files will be tested using `wc`
 
 ## More Info
 ### Comments for your SQL file:
