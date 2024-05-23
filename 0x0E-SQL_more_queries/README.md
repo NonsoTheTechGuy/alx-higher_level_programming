@@ -129,26 +129,25 @@ id  name
 $
 ```
 ![image](https://github.com/NonsoTheTechGuy/alx-higher_level_programming/assets/92136146/ed86da39-af33-41d5-99f3-c55fdf23db5d)
-![image](https://github.com/NonsoTheTechGuy/alx-higher_level_programming/assets/92136146/e9f1c02b-5801-4eac-be99-78091c76b4b4)
 
- ![image](https://github.com/NonsoTheTechGuy/alx-higher_level_programming/assets/92136146/1d9d5c1c-27ad-4a6b-b648-89872bf5a0db)
-![image](https://github.com/NonsoTheTechGuy/alx-higher_level_programming/assets/92136146/690ae7ca-1ce9-46e4-a6b5-1ca1b4a3e063)
-![image](https://github.com/NonsoTheTechGuy/alx-higher_level_programming/assets/92136146/4114e0de-6f4c-4a38-ad65-5680188169f5)
+
+![image](https://github.com/NonsoTheTechGuy/alx-higher_level_programming/assets/92136146/1d9d5c1c-27ad-4a6b-b648-89872bf5a0db)
+
 
 ![image](https://github.com/NonsoTheTechGuy/alx-higher_level_programming/assets/92136146/1e4b1e98-0ab3-4434-9a7b-4946273f414d)
-![image](https://github.com/NonsoTheTechGuy/alx-higher_level_programming/assets/92136146/40666a54-1ed3-479a-9686-36231609e850)
+
 
 ![image](https://github.com/NonsoTheTechGuy/alx-higher_level_programming/assets/92136146/8d83afb8-f489-4dfc-bd3d-fb82bc22b098)
-![image](https://github.com/NonsoTheTechGuy/alx-higher_level_programming/assets/92136146/b818a9db-4339-44ef-8d24-cb07e51bad7b)
+
 
 ![image](https://github.com/NonsoTheTechGuy/alx-higher_level_programming/assets/92136146/6e1ba55a-f960-4b03-9178-cba2641e2ded)
-![image](https://github.com/NonsoTheTechGuy/alx-higher_level_programming/assets/92136146/9b29d51c-79ac-4497-ba75-80fda956f2d5)
+
 
 ![image](https://github.com/NonsoTheTechGuy/alx-higher_level_programming/assets/92136146/8efaee16-f1e9-4630-b88d-efddc9445d62)
-![image](https://github.com/NonsoTheTechGuy/alx-higher_level_programming/assets/92136146/f2c6c169-5bdf-4002-bf20-45a41deebd1c)
+
 
 ![image](https://github.com/NonsoTheTechGuy/alx-higher_level_programming/assets/92136146/e23ff112-c820-4b8b-9f53-ea20be900217)
-![image](https://github.com/NonsoTheTechGuy/alx-higher_level_programming/assets/92136146/7c0888fa-90ba-48d9-9600-6098d7c359c4)
+
 
 
 
