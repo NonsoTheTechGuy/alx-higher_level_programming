@@ -108,9 +108,9 @@ performance_schema
 sys                      
 $
 ```
-In the container, credentials are `root/root`
+### In the container, credentials are `root/root`
 
-How to import a SQL dump
+# How to import a SQL dump
 ```
 $ echo "CREATE DATABASE hbtn_0d_tvshows;" | mysql -uroot -p
 Enter password: 
