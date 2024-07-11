@@ -1,5 +1,5 @@
 # PROJECT - 0x13. JavaScript - Objects, Scopes and Closures
-`JavaScript`
+## `JavaScript`
 
 ## Resources
 ### Read or watch:
