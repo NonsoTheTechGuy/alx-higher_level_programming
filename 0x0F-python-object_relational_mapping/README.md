@@ -447,7 +447,8 @@ Write a python file that contains the class definition of a `State` and an insta
     - class attribute `name` that represents a column of a string with maximum 128 characters and can’t be null
 - You must use the module `SQLAlchemy`
 - Your script should connect to a MySQL server running on `localhost` at port `3306`
-- # WARNING: 
+
+# WARNING: 
 all classes who inherit from `Base` must be imported before calling `Base.metadata.create_all(engine)`
 ```
 guillaume@ubuntu:~/0x0F$ cat 6-model_state.sql
@@ -721,7 +722,7 @@ Write a Python file similar to `model_state.py` named `model_city.py` that conta
     - class attribute `name` that represents a column of a string of 128 characters and can’t be null
     - class attribute `state_id` that represents a column of an integer, can’t be null and is a foreign key to `states.id`
 - You must use the module `SQLAlchemy`
-- 
+
 Next, write a script `14-model_city_fetch_by_state.py` that prints all City objects from the database `hbtn_0e_14_usa`:
 
 - Your script should take 3 arguments: `mysql username`, `mysql password` and `database name`
