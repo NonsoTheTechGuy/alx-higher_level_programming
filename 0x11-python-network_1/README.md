@@ -288,28 +288,32 @@ guillaume@ubuntu:~/0x11$
 - Directory: `0x11-python-network_1`
 - File: `8-json_api.py`
     
-9. My GitHub!
-mandatory
-Score: 0.0% (Checks completed: 0.0%)
-Write a Python script that takes your GitHub credentials (username and password) and uses the GitHub API to display your id
+## 9. My GitHub!
 
-You must use Basic Authentication with a personal access token as password to access to your information (only read:user permission is needed)
-The first argument will be your username
-The second argument will be your password (in your case, a personal access token as password)
-You must use the package requests and sys
-You are not allowed to import packages other than requests and sys
-You don’t need to check arguments passed to the script (number or type)
+`mandatory`
+
+Write a Python script that takes your GitHub credentials (username and password) and uses the [GitHub API](https://intranet.alxswe.com/rltoken/LjPfW9hW_55YwijGVofyTQ) to display your `id`
+
+- You must use [Basic Authentication](https://intranet.alxswe.com/rltoken/ECKUmLiAk_k2G0NPzqdykQ) with a [personal access token as password](https://intranet.alxswe.com/rltoken/Kz4UM-V_bcwrcWajaCAVtQ) to access to your information (only `read:user` permission is needed)
+- The first argument will be your `username`
+- The second argument will be your `password` (in your case, a [personal access token as password](https://intranet.alxswe.com/rltoken/Kz4UM-V_bcwrcWajaCAVtQ))
+- You must use the package `requests` and `sys`
+- You are not allowed to import packages other than `requests` and `sys`
+- You don’t need to check arguments passed to the script (number or type)
+```
 guillaume@ubuntu:~/0x11$ ./10-my_github.py papamuziko cisfun
 2531536
 guillaume@ubuntu:~/0x11$ ./10-my_github.py papamuziko wrong_pwd
 None
 guillaume@ubuntu:~/0x11$ 
-Repo:
+```
+---
+## Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x11-python-network_1
-File: 10-my_github.py
+- GitHub repository: `alx-higher_level_programming`
+- Directory: 0x11-python-network_1`
+- File: `10-my_github.py`
     
-Copyright © 2024 ALX, All rights reserved.
 
-
+# Author 
+## KALU JONAH CHINONSO
