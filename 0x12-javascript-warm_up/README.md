@@ -1,5 +1,5 @@
-# Curriculum
-# PROJECTS - 0x12. JavaScript - Warm up
+# **SE Engineering Curriculum**
+#  PROJECTS - 0x12. JavaScript - Warm up 
 `JavaScript`
  
 ## Background Context
