@@ -1,4 +1,4 @@
-# **SE Engineering Curriculum**
+# **SE Foundations Curriculum**
 #  PROJECTS - 0x12. JavaScript - Warm up 
 `JavaScript`
  
