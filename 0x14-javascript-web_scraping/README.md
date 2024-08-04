@@ -1,6 +1,7 @@
 # SE Foundations Curriculum
 
-# 0x14. JavaScript - `Web scraping` `Scripting` `API` `JavaScript`
+# PROJECT - 0x14. JavaScript 
+## `Web scraping` `Scripting` `API` `JavaScript`
 
 # Resources
 ## Read or watch:
