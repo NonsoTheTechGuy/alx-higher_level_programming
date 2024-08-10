@@ -1,14 +1,9 @@
+# SE Foundations Curriculum
 
-Curriculum
-SE Foundations
-Average: 61.46%
-0x15. JavaScript - Web jQuery
-Front-end
-JavaScript
- Weight: 1
- Ongoing second chance project - started Aug 7, 2024 6:00 AM, must end by Aug 13, 2024 6:00 AM
- Manual QA review must be done (request it when you are done with the project)
-Concepts
+# PROJECT - 0x15. JavaScript - Web jQuery
+## `Front-end` `JavaScript`
+ 
+# Concepts
 For this project, we expect you to look at these concepts:
 
 JavaScript in the browser
