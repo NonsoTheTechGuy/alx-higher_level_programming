@@ -1,6 +1,6 @@
 # SE Foundations Curriculum
 
-# PROJECT - 0x15. JavaScript - Web jQuery
+# PROJECT - 0x15. JavaScript - Web jQuery 🥇
 ## `Front-end` `JavaScript`
  
 # Concepts
