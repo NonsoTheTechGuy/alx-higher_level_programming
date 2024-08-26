@@ -225,7 +225,7 @@ guillaume@ubuntu:~/0x10$
 
 + GitHub repository: `alx-higher_level_programming`
 + Directory: `0x10-python-network_0`
-+ File: `6-peak.py`, `6-peak.txt`
++ File: `6-peak.py, 6-peak.txt`
     
 # Author
 
