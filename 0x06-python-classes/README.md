@@ -654,6 +654,6 @@ Disassembly of circumference:
 - File: `103-magic_class.py`
 
 
-# AAuthor
+# Author
 
 ## KALU JONAH CHINONSO 😃
