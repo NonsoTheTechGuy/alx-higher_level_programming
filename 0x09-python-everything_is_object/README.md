@@ -684,7 +684,9 @@ Assuming we are using a CPython implementation of Python3 with default options/c
 - File: `104-line1.txt, 104-line2.txt, 104-line3.txt, 104-line4.txt, 104-line5.txt`
    
 ## 33. int 3/3
-`advanced
+
+`advanced`
+
 ```
 julien@twix:/tmp/so$ cat int.py 
 print("I")
@@ -707,7 +709,9 @@ Hint: `NSMALLPOSINTS`, `NSMALLNEGINTS`
 - File: `105-line1.txt`
    
 ## 34. Clear strings
+
 `advanced`
+
  ```
 guillaume@ubuntu:/python3$ cat string.py 
 a = "SCHL"
